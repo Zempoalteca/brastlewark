@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		086E80AF24C38E9A0055B6C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086E80AE24C38E9A0055B6C4 /* AppDelegate.swift */; };
-		086E80B124C38E9A0055B6C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086E80B024C38E9A0055B6C4 /* SceneDelegate.swift */; };
 		086E80B324C38E9A0055B6C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086E80B224C38E9A0055B6C4 /* ViewController.swift */; };
 		086E80B624C38E9A0055B6C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 086E80B424C38E9A0055B6C4 /* Main.storyboard */; };
 		086E80B924C38E9A0055B6C4 /* Brastlewark.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 086E80B724C38E9A0055B6C4 /* Brastlewark.xcdatamodeld */; };
@@ -38,7 +37,6 @@
 /* Begin PBXFileReference section */
 		086E80AB24C38E9A0055B6C4 /* Brastlewark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brastlewark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		086E80AE24C38E9A0055B6C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		086E80B024C38E9A0055B6C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		086E80B224C38E9A0055B6C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		086E80B524C38E9A0055B6C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		086E80B824C38E9A0055B6C4 /* Brastlewark.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Brastlewark.xcdatamodel; sourceTree = "<group>"; };
@@ -102,13 +100,10 @@
 			isa = PBXGroup;
 			children = (
 				086E80AE24C38E9A0055B6C4 /* AppDelegate.swift */,
-				086E80B024C38E9A0055B6C4 /* SceneDelegate.swift */,
-				086E80B224C38E9A0055B6C4 /* ViewController.swift */,
-				086E80B424C38E9A0055B6C4 /* Main.storyboard */,
-				086E80BA24C38E9B0055B6C4 /* Assets.xcassets */,
-				086E80BC24C38E9B0055B6C4 /* LaunchScreen.storyboard */,
-				086E80BF24C38E9B0055B6C4 /* Info.plist */,
-				086E80B724C38E9A0055B6C4 /* Brastlewark.xcdatamodeld */,
+				08E32CCD24C3901A003742B4 /* Cells */,
+				086E80E324C38F6A0055B6C4 /* CoreData */,
+				086E80E124C38F5B0055B6C4 /* Modules */,
+				086E80E224C38F600055B6C4 /* Resources */,
 			);
 			path = Brastlewark;
 			sourceTree = "<group>";
@@ -129,6 +124,56 @@
 				086E80D524C38E9B0055B6C4 /* Info.plist */,
 			);
 			path = BrastlewarkUITests;
+			sourceTree = "<group>";
+		};
+		086E80E124C38F5B0055B6C4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				086E80E424C38F890055B6C4 /* LaunchScreen */,
+				086E80E524C38F980055B6C4 /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		086E80E224C38F600055B6C4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				086E80BF24C38E9B0055B6C4 /* Info.plist */,
+				086E80BA24C38E9B0055B6C4 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		086E80E324C38F6A0055B6C4 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				086E80B724C38E9A0055B6C4 /* Brastlewark.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		086E80E424C38F890055B6C4 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				086E80BC24C38E9B0055B6C4 /* LaunchScreen.storyboard */,
+			);
+			name = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		086E80E524C38F980055B6C4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				086E80B224C38E9A0055B6C4 /* ViewController.swift */,
+				086E80B424C38E9A0055B6C4 /* Main.storyboard */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		08E32CCD24C3901A003742B4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +310,6 @@
 				086E80B324C38E9A0055B6C4 /* ViewController.swift in Sources */,
 				086E80AF24C38E9A0055B6C4 /* AppDelegate.swift in Sources */,
 				086E80B924C38E9A0055B6C4 /* Brastlewark.xcdatamodeld in Sources */,
-				086E80B124C38E9A0055B6C4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +484,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YJ4835V329;
-				INFOPLIST_FILE = Brastlewark/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Brastlewark/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -459,7 +503,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YJ4835V329;
-				INFOPLIST_FILE = Brastlewark/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Brastlewark/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
