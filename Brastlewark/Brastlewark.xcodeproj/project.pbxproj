@@ -26,6 +26,7 @@
 		086E80C924C38E9B0055B6C4 /* BrastlewarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086E80C824C38E9B0055B6C4 /* BrastlewarkTests.swift */; };
 		086E80D424C38E9B0055B6C4 /* BrastlewarkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086E80D324C38E9B0055B6C4 /* BrastlewarkUITests.swift */; };
 		0875D6C924C3AD300043A4B9 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0875D6C824C3AD300043A4B9 /* WelcomeViewController.swift */; };
+		08E242F224C3B46500A431B5 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E242F124C3B46500A431B5 /* StringExtension.swift */; };
 		3CEC9D7AF9F87CC5147EF1CB /* Pods_Brastlewark_BrastlewarkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A483AE67BDC49291887416B /* Pods_Brastlewark_BrastlewarkUITests.framework */; };
 		4E80C63F19D965B9B3AC468A /* Pods_Brastlewark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45DA10C7EFE5AABB5FB773F /* Pods_Brastlewark.framework */; };
 		4F5C82271D2D80286965BD23 /* Pods_BrastlewarkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7681C53E1C33E178949674 /* Pods_BrastlewarkTests.framework */; };
@@ -54,9 +55,7 @@
 		0848E17524C3A6580056792C /* Exo2-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-SemiBold.ttf"; sourceTree = "<group>"; };
 		0848E17724C3A6640056792C /* Exo2-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-ExtraBold.ttf"; sourceTree = "<group>"; };
 		0848E17924C3A67B0056792C /* Exo2-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Light.ttf"; sourceTree = "<group>"; };
-		0848E17B24C3A7B10056792C /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Main.strings"; sourceTree = "<group>"; };
 		0848E17F24C3A7F40056792C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		0848E18124C3A7F70056792C /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		0848E18324C3AB470056792C /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		0848E18524C3AB540056792C /* trollin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trollin.json; sourceTree = "<group>"; };
 		0848E18724C3AB920056792C /* background-waves_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "background-waves_2.json"; sourceTree = "<group>"; };
@@ -76,6 +75,10 @@
 		086E80D324C38E9B0055B6C4 /* BrastlewarkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrastlewarkUITests.swift; sourceTree = "<group>"; };
 		086E80D524C38E9B0055B6C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0875D6C824C3AD300043A4B9 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		08E242EE24C3B38400A431B5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		08E242EF24C3B38400A431B5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		08E242F024C3B38400A431B5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		08E242F124C3B46500A431B5 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		1552E2B8292BEA8870F2B698 /* Pods-Brastlewark-BrastlewarkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brastlewark-BrastlewarkUITests.debug.xcconfig"; path = "Target Support Files/Pods-Brastlewark-BrastlewarkUITests/Pods-Brastlewark-BrastlewarkUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1CF404997EADC1A45BCD74D1 /* Pods-Brastlewark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brastlewark.release.xcconfig"; path = "Target Support Files/Pods-Brastlewark/Pods-Brastlewark.release.xcconfig"; sourceTree = "<group>"; };
 		2D7681C53E1C33E178949674 /* Pods_BrastlewarkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrastlewarkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -240,6 +243,7 @@
 		08E32CCD24C3901A003742B4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				08E242F124C3B46500A431B5 /* StringExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -358,7 +362,7 @@
 			knownRegions = (
 				en,
 				Base,
-				"es-419",
+				es,
 			);
 			mainGroup = 086E80A224C38E9A0055B6C4;
 			productRefGroup = 086E80AC24C38E9A0055B6C4 /* Products */;
@@ -519,6 +523,7 @@
 			files = (
 				086E80B324C38E9A0055B6C4 /* ViewController.swift in Sources */,
 				0875D6C924C3AD300043A4B9 /* WelcomeViewController.swift in Sources */,
+				08E242F224C3B46500A431B5 /* StringExtension.swift in Sources */,
 				086E80AF24C38E9A0055B6C4 /* AppDelegate.swift in Sources */,
 				086E80B924C38E9A0055B6C4 /* Brastlewark.xcdatamodeld in Sources */,
 			);
@@ -560,7 +565,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0848E17F24C3A7F40056792C /* en */,
-				0848E18124C3A7F70056792C /* es-419 */,
+				08E242F024C3B38400A431B5 /* es */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -569,7 +574,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				086E80B524C38E9A0055B6C4 /* Base */,
-				0848E17B24C3A7B10056792C /* es-419 */,
+				08E242EF24C3B38400A431B5 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -578,6 +583,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				086E80BD24C38E9B0055B6C4 /* Base */,
+				08E242EE24C3B38400A431B5 /* es */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -636,7 +642,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -691,7 +697,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

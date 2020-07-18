@@ -32,7 +32,7 @@ class WelcomeViewController: UIViewController {
     // MARK: - Functions
 
     private func initComponents() {
-        lblWelcome.text = "Welcome to \rBRASTLEWARK"
+        lblWelcome.text = "wlcm_title".localized
         trollingView.play()
         trollingView.loopMode = .loop
         backgroundWaves?.play()
