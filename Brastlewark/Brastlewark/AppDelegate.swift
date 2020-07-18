@@ -21,6 +21,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
+    // MARK: - Functions
+    func goToDashboard() {
+        let dashboard = DashboardViewController()
+        let navController = UINavigationController(rootViewController: dashboard)
+        window?.rootViewController = navController
+        window?.makeKeyAndVisible()
+    }
+
     // MARK: - Core Data stack
 
     lazy var persistentContainer: NSPersistentContainer = {

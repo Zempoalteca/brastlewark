@@ -17,16 +17,16 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var wavesView: AnimationView!
     @IBOutlet weak var lblWelcome: UILabel!
 
-    // MARK: - Variables
-
-    var animationView: AnimationView?
-    var backgroundWaves: AnimationView?
-
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         initComponents()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+                appDelegate.goToDashboard()
+            }
+        }
     }
 
     // MARK: - Functions
@@ -35,8 +35,8 @@ class WelcomeViewController: UIViewController {
         lblWelcome.text = "wlcm_title".localized
         trollingView.play()
         trollingView.loopMode = .loop
-        backgroundWaves?.play()
-        backgroundWaves?.loopMode = .loop
+        wavesView?.play()
+        wavesView?.loopMode = .loop
     }
 
 }
