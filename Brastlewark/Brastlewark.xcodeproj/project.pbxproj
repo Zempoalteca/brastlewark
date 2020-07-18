@@ -13,6 +13,10 @@
 		0848E17824C3A6640056792C /* Exo2-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0848E17724C3A6640056792C /* Exo2-ExtraBold.ttf */; };
 		0848E17A24C3A67B0056792C /* Exo2-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0848E17924C3A67B0056792C /* Exo2-Light.ttf */; };
 		0848E17E24C3A7F40056792C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0848E18024C3A7F40056792C /* Localizable.strings */; };
+		0848E18424C3AB470056792C /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 0848E18324C3AB470056792C /* loading.json */; };
+		0848E18624C3AB540056792C /* trollin.json in Resources */ = {isa = PBXBuildFile; fileRef = 0848E18524C3AB540056792C /* trollin.json */; };
+		0848E18924C3AB920056792C /* background-waves_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 0848E18724C3AB920056792C /* background-waves_2.json */; };
+		0848E18A24C3AB920056792C /* background-waves.json in Resources */ = {isa = PBXBuildFile; fileRef = 0848E18824C3AB920056792C /* background-waves.json */; };
 		086E80AF24C38E9A0055B6C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086E80AE24C38E9A0055B6C4 /* AppDelegate.swift */; };
 		086E80B324C38E9A0055B6C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086E80B224C38E9A0055B6C4 /* ViewController.swift */; };
 		086E80B624C38E9A0055B6C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 086E80B424C38E9A0055B6C4 /* Main.storyboard */; };
@@ -21,6 +25,7 @@
 		086E80BE24C38E9B0055B6C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 086E80BC24C38E9B0055B6C4 /* LaunchScreen.storyboard */; };
 		086E80C924C38E9B0055B6C4 /* BrastlewarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086E80C824C38E9B0055B6C4 /* BrastlewarkTests.swift */; };
 		086E80D424C38E9B0055B6C4 /* BrastlewarkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086E80D324C38E9B0055B6C4 /* BrastlewarkUITests.swift */; };
+		0875D6C924C3AD300043A4B9 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0875D6C824C3AD300043A4B9 /* WelcomeViewController.swift */; };
 		3CEC9D7AF9F87CC5147EF1CB /* Pods_Brastlewark_BrastlewarkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A483AE67BDC49291887416B /* Pods_Brastlewark_BrastlewarkUITests.framework */; };
 		4E80C63F19D965B9B3AC468A /* Pods_Brastlewark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45DA10C7EFE5AABB5FB773F /* Pods_Brastlewark.framework */; };
 		4F5C82271D2D80286965BD23 /* Pods_BrastlewarkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7681C53E1C33E178949674 /* Pods_BrastlewarkTests.framework */; };
@@ -52,6 +57,10 @@
 		0848E17B24C3A7B10056792C /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Main.strings"; sourceTree = "<group>"; };
 		0848E17F24C3A7F40056792C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0848E18124C3A7F70056792C /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		0848E18324C3AB470056792C /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		0848E18524C3AB540056792C /* trollin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trollin.json; sourceTree = "<group>"; };
+		0848E18724C3AB920056792C /* background-waves_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "background-waves_2.json"; sourceTree = "<group>"; };
+		0848E18824C3AB920056792C /* background-waves.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "background-waves.json"; sourceTree = "<group>"; };
 		086E80AB24C38E9A0055B6C4 /* Brastlewark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brastlewark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		086E80AE24C38E9A0055B6C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		086E80B224C38E9A0055B6C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +75,7 @@
 		086E80CF24C38E9B0055B6C4 /* BrastlewarkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrastlewarkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		086E80D324C38E9B0055B6C4 /* BrastlewarkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrastlewarkUITests.swift; sourceTree = "<group>"; };
 		086E80D524C38E9B0055B6C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0875D6C824C3AD300043A4B9 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		1552E2B8292BEA8870F2B698 /* Pods-Brastlewark-BrastlewarkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brastlewark-BrastlewarkUITests.debug.xcconfig"; path = "Target Support Files/Pods-Brastlewark-BrastlewarkUITests/Pods-Brastlewark-BrastlewarkUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1CF404997EADC1A45BCD74D1 /* Pods-Brastlewark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brastlewark.release.xcconfig"; path = "Target Support Files/Pods-Brastlewark/Pods-Brastlewark.release.xcconfig"; sourceTree = "<group>"; };
 		2D7681C53E1C33E178949674 /* Pods_BrastlewarkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrastlewarkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +125,17 @@
 				0848E17724C3A6640056792C /* Exo2-ExtraBold.ttf */,
 			);
 			name = Fonts;
+			sourceTree = "<group>";
+		};
+		0848E18224C3AB390056792C /* Lotties */ = {
+			isa = PBXGroup;
+			children = (
+				0848E18724C3AB920056792C /* background-waves_2.json */,
+				0848E18824C3AB920056792C /* background-waves.json */,
+				0848E18524C3AB540056792C /* trollin.json */,
+				0848E18324C3AB470056792C /* loading.json */,
+			);
+			name = Lotties;
 			sourceTree = "<group>";
 		};
 		086E80A224C38E9A0055B6C4 = {
@@ -181,6 +202,7 @@
 		086E80E224C38F600055B6C4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0848E18224C3AB390056792C /* Lotties */,
 				0848E17024C3A5DA0056792C /* Fonts */,
 				086E80BF24C38E9B0055B6C4 /* Info.plist */,
 				086E80BA24C38E9B0055B6C4 /* Assets.xcassets */,
@@ -210,6 +232,7 @@
 			children = (
 				086E80B224C38E9A0055B6C4 /* ViewController.swift */,
 				086E80B424C38E9A0055B6C4 /* Main.storyboard */,
+				0875D6C824C3AD300043A4B9 /* WelcomeViewController.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -357,11 +380,15 @@
 				0848E17824C3A6640056792C /* Exo2-ExtraBold.ttf in Resources */,
 				086E80BE24C38E9B0055B6C4 /* LaunchScreen.storyboard in Resources */,
 				086E80BB24C38E9B0055B6C4 /* Assets.xcassets in Resources */,
+				0848E18924C3AB920056792C /* background-waves_2.json in Resources */,
 				0848E17224C3A63E0056792C /* IndieFlower-Regular.ttf in Resources */,
+				0848E18424C3AB470056792C /* loading.json in Resources */,
 				0848E17E24C3A7F40056792C /* Localizable.strings in Resources */,
 				086E80B624C38E9A0055B6C4 /* Main.storyboard in Resources */,
 				0848E17A24C3A67B0056792C /* Exo2-Light.ttf in Resources */,
+				0848E18A24C3AB920056792C /* background-waves.json in Resources */,
 				0848E17424C3A64C0056792C /* Exo2-Regular.ttf in Resources */,
+				0848E18624C3AB540056792C /* trollin.json in Resources */,
 				0848E17624C3A6580056792C /* Exo2-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,6 +518,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				086E80B324C38E9A0055B6C4 /* ViewController.swift in Sources */,
+				0875D6C924C3AD300043A4B9 /* WelcomeViewController.swift in Sources */,
 				086E80AF24C38E9A0055B6C4 /* AppDelegate.swift in Sources */,
 				086E80B924C38E9A0055B6C4 /* Brastlewark.xcdatamodeld in Sources */,
 			);
