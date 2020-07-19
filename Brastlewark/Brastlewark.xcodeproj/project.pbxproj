@@ -35,6 +35,7 @@
 		08E2430624C4098500A431B5 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E2430524C4098500A431B5 /* NetworkService.swift */; };
 		08E2430824C40A5E00A431B5 /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E2430724C40A5E00A431B5 /* NetworkAPI.swift */; };
 		08E2430A24C4C27200A431B5 /* BrastlewarkInhabitants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E2430924C4C27200A431B5 /* BrastlewarkInhabitants.swift */; };
+		08E2430C24C4DF5400A431B5 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E2430B24C4DF5300A431B5 /* DataExtension.swift */; };
 		3CEC9D7AF9F87CC5147EF1CB /* Pods_Brastlewark_BrastlewarkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A483AE67BDC49291887416B /* Pods_Brastlewark_BrastlewarkUITests.framework */; };
 		4E80C63F19D965B9B3AC468A /* Pods_Brastlewark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45DA10C7EFE5AABB5FB773F /* Pods_Brastlewark.framework */; };
 		4F5C82271D2D80286965BD23 /* Pods_BrastlewarkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7681C53E1C33E178949674 /* Pods_BrastlewarkTests.framework */; };
@@ -93,6 +94,7 @@
 		08E2430524C4098500A431B5 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		08E2430724C40A5E00A431B5 /* NetworkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPI.swift; sourceTree = "<group>"; };
 		08E2430924C4C27200A431B5 /* BrastlewarkInhabitants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrastlewarkInhabitants.swift; sourceTree = "<group>"; };
+		08E2430B24C4DF5300A431B5 /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
 		1552E2B8292BEA8870F2B698 /* Pods-Brastlewark-BrastlewarkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brastlewark-BrastlewarkUITests.debug.xcconfig"; path = "Target Support Files/Pods-Brastlewark-BrastlewarkUITests/Pods-Brastlewark-BrastlewarkUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1CF404997EADC1A45BCD74D1 /* Pods-Brastlewark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brastlewark.release.xcconfig"; path = "Target Support Files/Pods-Brastlewark/Pods-Brastlewark.release.xcconfig"; sourceTree = "<group>"; };
 		2D7681C53E1C33E178949674 /* Pods_BrastlewarkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrastlewarkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -314,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				08E242F124C3B46500A431B5 /* StringExtension.swift */,
+				08E2430B24C4DF5300A431B5 /* DataExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -594,6 +597,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08E242FE24C3D2A700A431B5 /* DashInhabitantCollectionViewCell.swift in Sources */,
+				08E2430C24C4DF5400A431B5 /* DataExtension.swift in Sources */,
 				08E2430824C40A5E00A431B5 /* NetworkAPI.swift in Sources */,
 				08E242F624C3B83D00A431B5 /* DashboardViewController.swift in Sources */,
 				0875D6C924C3AD300043A4B9 /* WelcomeViewController.swift in Sources */,

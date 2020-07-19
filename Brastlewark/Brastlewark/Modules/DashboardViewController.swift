@@ -14,9 +14,10 @@ class DashboardViewController: UIViewController {
     // MARK: - IBOutlets
 
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var loadingView: AnimationView!
 
     // MARK: - Variables
-    let manager = NetworkService()
+    private var viewModel: DashboardViewModel = DashboardViewModel()
 
     // MARK: - Lifecycle
 
@@ -29,7 +30,14 @@ class DashboardViewController: UIViewController {
 
     private func initComponents() {
         title = "Brastlewark"
+        loadingView.play()
+        loadingView.loopMode = .loop
+        loadingView.isHidden = true
         configureCollectionView()
+        viewModel.showLoader = showLoaderinView
+        viewModel.hideLoader = hideLoaderInView
+        viewModel.reloadInfo = reloadInfoInCollection
+        viewModel.fetchInhabitants()
     }
 
     private func configureCollectionView() {
@@ -40,6 +48,20 @@ class DashboardViewController: UIViewController {
                                 forCellWithReuseIdentifier: DashInhabitantCollectionViewCell.identifier)
     }
 
+    private func showLoaderinView() {
+        // Show loader view
+        loadingView.isHidden = false
+    }
+
+    private func hideLoaderInView() {
+        // Hide loade view
+        loadingView.isHidden = true
+    }
+
+    private func reloadInfoInCollection() {
+        collectionView.reloadData()
+    }
+
     // MARK: - Actions
 
 }
@@ -48,15 +70,26 @@ extension DashboardViewController: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return viewModel.getSizeInhabitants()
     }
 
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+
         guard let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: DashInhabitantCollectionViewCell.identifier,
             for: indexPath) as? DashInhabitantCollectionViewCell else {
                 return UICollectionViewCell()
+        }
+        cell.configure()
+        let inhabitant = viewModel.arrayInhabitants[indexPath.row]
+        cell.setInfo(for: inhabitant)
+        if inhabitant.image == nil {
+            viewModel.downloadThumbnail(path: inhabitant.thumbnail) { [weak self] imageData in
+                self?.viewModel.arrayInhabitants[indexPath.row].image =
+                    imageData?.resizeImageData(compressionQuality: 0.1)
+                cell.setThumbnail(data: imageData)
+            }
         }
         return cell
     }
@@ -68,6 +101,7 @@ extension DashboardViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
+
         let width = (collectionView.frame.width - 20) / 2
         return CGSize(width: width, height: 109)
     }
@@ -79,6 +113,7 @@ extension DashboardViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView,
                         didSelectItemAt indexPath: IndexPath) {
         print("Tapped!")
+        // TODO: Navigation
     }
 
 }

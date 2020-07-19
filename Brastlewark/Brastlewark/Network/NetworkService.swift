@@ -69,4 +69,28 @@ class NetworkService: NSObject {
         }
     }
 
+    func donwloadInfo(for path: String,
+                      completionSuccess: @escaping ((Data) -> Void),
+                      completionError: @escaping (() -> Void)) {
+
+        // URL
+        guard let urlPath = URL(string: path) else {
+            completionError()
+            return
+        }
+
+        // Request
+        let urlRequest = URLRequest(url: urlPath)
+
+        alamofireManager.download(urlRequest).responseData { dataResponse in
+            print("Finish to Download: \(dataResponse)")
+            switch dataResponse.result {
+            case .success(let dataImage):
+                completionSuccess(dataImage)
+            case .failure(let error):
+                completionError()
+            }
+        }
+    }
+
 }

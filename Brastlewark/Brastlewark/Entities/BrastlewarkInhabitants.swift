@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Brastlewark: Codable {
+struct BrastlewarkModel: Codable {
 
     let allInhabitants: [Inhabitant]
 

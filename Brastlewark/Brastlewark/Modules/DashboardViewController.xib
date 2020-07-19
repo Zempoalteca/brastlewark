@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DashboardViewController" customModule="Brastlewark" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="4iv-nH-wLn" id="zKz-u5-RCe"/>
+                <outlet property="loadingView" destination="Q6b-Ju-i4n" id="tbC-4C-qTp"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -29,11 +30,24 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q6b-Ju-i4n" customClass="AnimationView" customModule="Lottie">
+                    <rect key="frame" x="157" y="425" width="100" height="100"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="XOG-jy-vyO"/>
+                        <constraint firstAttribute="width" constant="100" id="kjg-FH-4o3"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="loading"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="4iv-nH-wLn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="DeF-Xz-Iwn"/>
+                <constraint firstItem="Q6b-Ju-i4n" firstAttribute="centerY" secondItem="4iv-nH-wLn" secondAttribute="centerY" id="NXe-NH-yLA"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4iv-nH-wLn" secondAttribute="trailing" constant="20" id="X9f-IE-MP6"/>
+                <constraint firstItem="Q6b-Ju-i4n" firstAttribute="centerX" secondItem="4iv-nH-wLn" secondAttribute="centerX" id="hqd-QE-WYy"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="4iv-nH-wLn" secondAttribute="bottom" id="jwU-6a-bBC"/>
                 <constraint firstItem="4iv-nH-wLn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="qjC-8t-Mh0"/>
             </constraints>

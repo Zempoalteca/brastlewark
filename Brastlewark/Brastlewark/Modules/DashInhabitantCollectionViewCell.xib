@@ -4,10 +4,17 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Exo2-ExtraBold.ttf">
+            <string>Exo2-ExtraBold</string>
+        </array>
+        <array key="Exo2-Regular.ttf">
+            <string>Exo2-Regular</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -18,26 +25,80 @@
                 <rect key="frame" x="0.0" y="0.0" width="268" height="243"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sT8-yk-pxU">
-                        <rect key="frame" x="0.0" y="0.0" width="268" height="243"/>
-                        <color key="backgroundColor" name="MainColor"/>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sT8-yk-pxU">
+                        <rect key="frame" x="5" y="5" width="258" height="233"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BQm-2t-74c">
+                                <rect key="frame" x="0.0" y="0.0" width="258" height="233"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dX8-FG-lgh">
+                                <rect key="frame" x="0.0" y="190" width="258" height="43"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xi2-5K-WiW">
+                                    <rect key="frame" x="0.0" y="0.0" width="258" height="43"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zRH-N3-xoZ">
+                                            <rect key="frame" x="3" y="3" width="252" height="37"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Zjz-6l-wjn">
+                                                    <rect key="frame" x="0.0" y="0.0" width="252" height="19"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="19" id="leX-jK-c4e"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Exo2-ExtraBold" family="Exo 2" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBd-LD-6JK">
+                                                    <rect key="frame" x="0.0" y="24" width="252" height="13"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="13" id="l54-Yd-Xmp"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="zRH-N3-xoZ" firstAttribute="top" secondItem="xi2-5K-WiW" secondAttribute="top" constant="3" id="1ka-qF-mJ9"/>
+                                        <constraint firstAttribute="trailing" secondItem="zRH-N3-xoZ" secondAttribute="trailing" constant="3" id="Clj-hm-fkP"/>
+                                        <constraint firstItem="zRH-N3-xoZ" firstAttribute="leading" secondItem="xi2-5K-WiW" secondAttribute="leading" constant="3" id="g48-jQ-cr2"/>
+                                        <constraint firstAttribute="bottom" secondItem="zRH-N3-xoZ" secondAttribute="bottom" constant="3" id="sMq-VB-AZT"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="BQm-2t-74c" secondAttribute="bottom" id="3M6-Mq-RTk"/>
+                            <constraint firstItem="dX8-FG-lgh" firstAttribute="leading" secondItem="BQm-2t-74c" secondAttribute="leading" id="3Rz-vr-x5B"/>
+                            <constraint firstItem="dX8-FG-lgh" firstAttribute="trailing" secondItem="BQm-2t-74c" secondAttribute="trailing" id="6gr-lk-bDZ"/>
+                            <constraint firstItem="dX8-FG-lgh" firstAttribute="bottom" secondItem="BQm-2t-74c" secondAttribute="bottom" id="FIS-DL-r04"/>
+                            <constraint firstItem="BQm-2t-74c" firstAttribute="top" secondItem="sT8-yk-pxU" secondAttribute="top" id="XwL-Ut-0F9"/>
+                            <constraint firstAttribute="trailing" secondItem="BQm-2t-74c" secondAttribute="trailing" id="f95-2l-3nH"/>
+                            <constraint firstItem="BQm-2t-74c" firstAttribute="leading" secondItem="sT8-yk-pxU" secondAttribute="leading" id="idd-EV-lfC"/>
+                        </constraints>
                     </view>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="sT8-yk-pxU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="A0V-Un-WJl"/>
-                <constraint firstItem="sT8-yk-pxU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="UOM-dx-rZN"/>
-                <constraint firstAttribute="trailing" secondItem="sT8-yk-pxU" secondAttribute="trailing" id="UyU-kR-u3v"/>
-                <constraint firstAttribute="bottom" secondItem="sT8-yk-pxU" secondAttribute="bottom" id="bbU-iy-3PN"/>
+                <constraint firstItem="sT8-yk-pxU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="A0V-Un-WJl"/>
+                <constraint firstItem="sT8-yk-pxU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="UOM-dx-rZN"/>
+                <constraint firstAttribute="trailing" secondItem="sT8-yk-pxU" secondAttribute="trailing" constant="5" id="UyU-kR-u3v"/>
+                <constraint firstAttribute="bottom" secondItem="sT8-yk-pxU" secondAttribute="bottom" constant="5" id="bbU-iy-3PN"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="268" height="243"/>
+            <connections>
+                <outlet property="container" destination="sT8-yk-pxU" id="Dy6-Lt-zja"/>
+                <outlet property="imgThumbnail" destination="BQm-2t-74c" id="SOV-7r-uZa"/>
+                <outlet property="lblMoreInfo" destination="aBd-LD-6JK" id="BUg-1d-6PS"/>
+                <outlet property="lblName" destination="Zjz-6l-wjn" id="8dL-Bw-01T"/>
+            </connections>
             <point key="canvasLocation" x="295.6521739130435" y="161.71875"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <namedColor name="MainColor">
-            <color red="0.0" green="0.74117647058823533" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-    </resources>
 </document>
