@@ -112,8 +112,11 @@ extension DashboardViewController: UICollectionViewDelegate {
 
     func collectionView(_ collectionView: UICollectionView,
                         didSelectItemAt indexPath: IndexPath) {
-        print("Tapped!")
-        // TODO: Navigation
+
+        let controller = DetailInhabitantViewController()
+        controller.inhabitant = viewModel.arrayInhabitants[indexPath.row]
+        self.navigationController?.pushViewController(controller,
+                                                      animated: true)
     }
 
 }
