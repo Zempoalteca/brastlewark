@@ -12,25 +12,32 @@ import Lottie
 class DashboardViewController: UIViewController {
 
     // MARK: - IBOutlets
+
     @IBOutlet weak var collectionView: UICollectionView!
 
     // MARK: - Variables
+    let manager = NetworkService()
 
     // MARK: - Lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
         initComponents()
     }
 
     // MARK: - Functions
+
     private func initComponents() {
         title = "Brastlewark"
+        configureCollectionView()
     }
 
     private func configureCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
-//        collectionView.register(<#T##nib: UINib?##UINib?#>, forCellWithReuseIdentifier: <#T##String#>)
+        collectionView.register(UINib(nibName: DashInhabitantCollectionViewCell.identifier,
+                                      bundle: .main),
+                                forCellWithReuseIdentifier: DashInhabitantCollectionViewCell.identifier)
     }
 
     // MARK: - Actions
@@ -46,7 +53,23 @@ extension DashboardViewController: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        guard let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: DashInhabitantCollectionViewCell.identifier,
+            for: indexPath) as? DashInhabitantCollectionViewCell else {
+                return UICollectionViewCell()
+        }
+        return cell
+    }
+
+}
+
+extension DashboardViewController: UICollectionViewDelegateFlowLayout {
+
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = (collectionView.frame.width - 20) / 2
+        return CGSize(width: width, height: 109)
     }
 
 }
