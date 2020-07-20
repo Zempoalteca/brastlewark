@@ -29,7 +29,7 @@ class DashboardViewController: UIViewController {
     // MARK: - Functions
 
     private func initComponents() {
-        title = "Brastlewark"
+        title = Utils.nameApp
         loadingView.play()
         loadingView.loopMode = .loop
         loadingView.isHidden = true

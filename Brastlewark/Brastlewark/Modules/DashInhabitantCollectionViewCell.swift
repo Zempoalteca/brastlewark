@@ -29,7 +29,7 @@ class DashInhabitantCollectionViewCell: UICollectionViewCell {
 
     func setInfo(for inhabitant: Inhabitant) {
         lblName.text = inhabitant.name
-        lblMoreInfo.text = "Age" + ": " + String(inhabitant.ageInhabitant)
+        lblMoreInfo.text = "dshbrd_lbl_age".localized + String(inhabitant.ageInhabitant)
         if let thumbnail = inhabitant.image {
             imgThumbnail.image = UIImage(data: thumbnail)
         } else {

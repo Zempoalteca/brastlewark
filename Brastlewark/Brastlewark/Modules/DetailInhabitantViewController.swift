@@ -44,12 +44,12 @@ class DetailInhabitantViewController: UIViewController {
             return
         }
         lblName.text = infoInhabitant.name
-        lblAge.text = "Age: \(infoInhabitant.ageInhabitant)"
-        lblWeight.text = "\(infoInhabitant.weight)"
-        lblHeight.text = "\(infoInhabitant.height)"
-        lblHairColor.text = infoInhabitant.hairColor
-        lblTitleSkills.text = "Professions"
-        lbltitleFiends.text = "Amigos"
+        lblAge.text = "dshbrd_lbl_age".localized + " \(infoInhabitant.ageInhabitant)"
+        lblWeight.text = "details_weight".localized + "\(infoInhabitant.weight)"
+        lblHeight.text = "details_height".localized + "\(infoInhabitant.height)"
+        lblHairColor.text = "details_hair_color".localized + infoInhabitant.hairColor
+        lblTitleSkills.text = "details_professions".localized
+        lbltitleFiends.text = "details_friends".localized
         stackViewHabilities.isHidden = infoInhabitant.professions.isEmpty
         infoInhabitant.professions.forEach({
             stackViewHabilities.addArrangedSubview(createNewLabel(text: $0))

@@ -8,3 +8,13 @@
 
 // MARK: - Welcome
 "wlcm_title" = "Bienvenido a \rBRASTLEWARK";
+
+// MARK: - Dashboard
+"dshbrd_lbl_age" = "Edad: ";
+
+// MARK: - Details Inhabitant
+"details_weight" = "Peso: ";
+"details_height" = "Altura: ";
+"details_hair_color" = "Color de pelo: ";
+"details_professions" = "Oficios: ";
+"details_friends" = "Amigos: ";
