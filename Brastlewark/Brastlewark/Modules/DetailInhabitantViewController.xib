@@ -49,7 +49,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aqG-iw-gSn">
-                                    <rect key="frame" x="10" y="0.0" width="394" height="744"/>
+                                    <rect key="frame" x="10" y="10" width="394" height="734"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CnE-Vp-rRT">
                                             <rect key="frame" x="0.0" y="0.0" width="394" height="320"/>
@@ -93,7 +93,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PmO-9X-Kcs">
-                                            <rect key="frame" x="0.0" y="509.5" width="394" height="234.5"/>
+                                            <rect key="frame" x="0.0" y="509.5" width="394" height="224.5"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="s8s-KF-hvg">
                                                     <rect key="frame" x="0.0" y="0.0" width="192" height="20"/>
@@ -122,7 +122,7 @@
                                     </subviews>
                                 </stackView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k4a-Za-rkp" customClass="AnimationView" customModule="Lottie">
-                                    <rect key="frame" x="157" y="110" width="100" height="100"/>
+                                    <rect key="frame" x="157" y="120" width="100" height="100"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="100" id="Yl0-xC-PSo"/>
@@ -138,7 +138,7 @@
                                 <constraint firstItem="k4a-Za-rkp" firstAttribute="centerY" secondItem="CnE-Vp-rRT" secondAttribute="centerY" id="8Jm-7h-dlD"/>
                                 <constraint firstItem="aqG-iw-gSn" firstAttribute="leading" secondItem="jBa-7Y-FLh" secondAttribute="leading" constant="10" id="9yp-Tr-ieJ"/>
                                 <constraint firstItem="k4a-Za-rkp" firstAttribute="centerX" secondItem="CnE-Vp-rRT" secondAttribute="centerX" id="bnv-Xa-f6M"/>
-                                <constraint firstItem="aqG-iw-gSn" firstAttribute="top" secondItem="jBa-7Y-FLh" secondAttribute="top" id="uro-Lv-Ucb"/>
+                                <constraint firstItem="aqG-iw-gSn" firstAttribute="top" secondItem="jBa-7Y-FLh" secondAttribute="top" constant="10" id="uro-Lv-Ucb"/>
                                 <constraint firstAttribute="bottom" secondItem="aqG-iw-gSn" secondAttribute="bottom" constant="30" id="wGd-xB-yk3"/>
                                 <constraint firstAttribute="trailing" secondItem="aqG-iw-gSn" secondAttribute="trailing" constant="10" id="yx8-VT-XFc"/>
                             </constraints>

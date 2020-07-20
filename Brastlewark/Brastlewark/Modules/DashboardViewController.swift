@@ -103,7 +103,7 @@ extension DashboardViewController: UICollectionViewDelegateFlowLayout {
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
 
         let width = (collectionView.frame.width - 20) / 2
-        return CGSize(width: width, height: 109)
+        return CGSize(width: width, height: 150)
     }
 
 }
