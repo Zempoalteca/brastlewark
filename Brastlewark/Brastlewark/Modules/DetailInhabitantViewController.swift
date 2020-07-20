@@ -1,0 +1,91 @@
+//
+//  DetailInhabitantViewController.swift
+//  Brastlewark
+//
+//  Created by Gabriel Z on 19/07/20.
+//  Copyright © 2020 Zempoalteca. All rights reserved.
+//
+
+import UIKit
+import Lottie
+
+class DetailInhabitantViewController: UIViewController {
+
+    // MARK: - Architecture Properties
+    private var viewModel = DetaitInhabitantViewModel()
+
+    // MARK: - IBOutlets
+    @IBOutlet weak var imgInhabitant: UIImageView!
+    @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var lblAge: UILabel!
+    @IBOutlet weak var lblWeight: UILabel!
+    @IBOutlet weak var lblHeight: UILabel!
+    @IBOutlet weak var lblHairColor: UILabel!
+    @IBOutlet weak var loadingView: AnimationView!
+    @IBOutlet weak var stackViewHabilities: UIStackView!
+    @IBOutlet weak var lblTitleSkills: UILabel!
+    @IBOutlet weak var stackViewFriends: UIStackView!
+    @IBOutlet weak var lbltitleFiends: UILabel!
+
+    // MARK: - Variables
+    var inhabitant: Inhabitant?
+
+    // MARK: - Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        initComponents()
+    }
+
+    // MARK: - Functions
+    private func initComponents() {
+        loadingView.play()
+        loadingView.loopMode = .loop
+        guard let infoInhabitant = inhabitant else {
+            return
+        }
+        lblName.text = infoInhabitant.name
+        lblAge.text = "dshbrd_lbl_age".localized + " \(infoInhabitant.ageInhabitant)"
+        lblWeight.text = "details_weight".localized + "\(infoInhabitant.weight)"
+        lblHeight.text = "details_height".localized + "\(infoInhabitant.height)"
+        lblHairColor.text = "details_hair_color".localized + infoInhabitant.hairColor
+        lblTitleSkills.text = "details_professions".localized
+        lbltitleFiends.text = "details_friends".localized
+        stackViewHabilities.isHidden = infoInhabitant.professions.isEmpty
+        infoInhabitant.professions.forEach({
+            stackViewHabilities.addArrangedSubview(createNewLabel(text: $0))
+        })
+        stackViewFriends.isHidden = infoInhabitant.friends.isEmpty
+        infoInhabitant.friends.forEach({
+            stackViewFriends.addArrangedSubview(createNewLabel(text: $0))
+        })
+        configureViewModel(inhabitant: infoInhabitant)
+    }
+
+    private func configureViewModel(inhabitant: Inhabitant) {
+        viewModel.showLoader = showLoaderInView
+        viewModel.hideLoader = hideLoderInView
+        viewModel.loadImage = loadImageInView
+        viewModel.fetchImage(path: inhabitant.thumbnail)
+    }
+
+    private func showLoaderInView() {
+        loadingView.isHidden = false
+    }
+
+    private func hideLoderInView() {
+        loadingView.isHidden = true
+    }
+
+    private func loadImageInView() {
+        imgInhabitant.image = viewModel.thumbnailImage
+    }
+
+    private func createNewLabel(text: String) -> UILabel {
+        let newLabel = UILabel()
+        newLabel.font = UIFont.getExoRegular(size: 17)
+        newLabel.text = text
+        newLabel.adjustsFontSizeToFitWidth = true
+        return newLabel
+    }
+
+}

@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  Brastlewark
+
+  Created by Gabriel Z on 18/07/20.
+  Copyright © 2020 Zempoalteca. All rights reserved.
+*/
+
+// MARK: - Welcome
+"wlcm_title" = "Welcome to \rBRASTLEWARK";
+
+// MARK: - Dashboard
+"dshbrd_lbl_age" = "Age: ";
+
+// MARK: - Details Inhabitant
+"details_weight" = "Weight: ";
+"details_height" = "Height: ";
+"details_hair_color" = "Hair color: ";
+"details_professions" = "Professions: ";
+"details_friends" = "Friends: ";

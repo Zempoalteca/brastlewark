@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Brastlewark
+
+  Created by Gabriel Z on 18/07/20.
+  Copyright © 2020 Zempoalteca. All rights reserved.
+*/
+
+// MARK: - Welcome
+"wlcm_title" = "Bienvenido a \rBRASTLEWARK";
