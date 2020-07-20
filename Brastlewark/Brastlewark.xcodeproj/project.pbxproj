@@ -16,7 +16,6 @@
 		0848E18424C3AB470056792C /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 0848E18324C3AB470056792C /* loading.json */; };
 		0848E18624C3AB540056792C /* trollin.json in Resources */ = {isa = PBXBuildFile; fileRef = 0848E18524C3AB540056792C /* trollin.json */; };
 		0848E18924C3AB920056792C /* background-waves_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 0848E18724C3AB920056792C /* background-waves_2.json */; };
-		0848E18A24C3AB920056792C /* background-waves.json in Resources */ = {isa = PBXBuildFile; fileRef = 0848E18824C3AB920056792C /* background-waves.json */; };
 		086E80AF24C38E9A0055B6C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086E80AE24C38E9A0055B6C4 /* AppDelegate.swift */; };
 		086E80B624C38E9A0055B6C4 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 086E80B424C38E9A0055B6C4 /* Welcome.storyboard */; };
 		086E80BB24C38E9B0055B6C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 086E80BA24C38E9B0055B6C4 /* Assets.xcassets */; };
@@ -75,7 +74,6 @@
 		0848E18324C3AB470056792C /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		0848E18524C3AB540056792C /* trollin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trollin.json; sourceTree = "<group>"; };
 		0848E18724C3AB920056792C /* background-waves_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "background-waves_2.json"; sourceTree = "<group>"; };
-		0848E18824C3AB920056792C /* background-waves.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "background-waves.json"; sourceTree = "<group>"; };
 		086E80AB24C38E9A0055B6C4 /* Brastlewark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brastlewark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		086E80AE24C38E9A0055B6C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		086E80B524C38E9A0055B6C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
@@ -164,7 +162,6 @@
 			isa = PBXGroup;
 			children = (
 				0848E18724C3AB920056792C /* background-waves_2.json */,
-				0848E18824C3AB920056792C /* background-waves.json */,
 				0848E18524C3AB540056792C /* trollin.json */,
 				0848E18324C3AB470056792C /* loading.json */,
 			);
@@ -511,7 +508,6 @@
 				086E80B624C38E9A0055B6C4 /* Welcome.storyboard in Resources */,
 				0848E17A24C3A67B0056792C /* Exo2-Light.ttf in Resources */,
 				08E242FF24C3D2A700A431B5 /* DashInhabitantCollectionViewCell.xib in Resources */,
-				0848E18A24C3AB920056792C /* background-waves.json in Resources */,
 				0848E17424C3A64C0056792C /* Exo2-Regular.ttf in Resources */,
 				0848E18624C3AB540056792C /* trollin.json in Resources */,
 				0848E17624C3A6580056792C /* Exo2-SemiBold.ttf in Resources */,
