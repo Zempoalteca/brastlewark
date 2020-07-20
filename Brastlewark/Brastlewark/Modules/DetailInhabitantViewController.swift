@@ -64,7 +64,7 @@ class DetailInhabitantViewController: UIViewController {
     private func configureViewModel(inhabitant: Inhabitant) {
         viewModel.showLoader = showLoaderInView
         viewModel.hideLoader = hideLoderInView
-        viewModel.setImage = setImageInhabitant(data:)
+        viewModel.loadImage = loadImageInView
         viewModel.fetchImage(path: inhabitant.thumbnail)
     }
 
@@ -76,10 +76,8 @@ class DetailInhabitantViewController: UIViewController {
         loadingView.isHidden = true
     }
 
-    private func setImageInhabitant(data: Data?) {
-        if let imageData = data {
-            imgInhabitant.image = UIImage(data: imageData)
-        }
+    private func loadImageInView() {
+        imgInhabitant.image = viewModel.thumbnailImage
     }
 
     private func createNewLabel(text: String) -> UILabel {

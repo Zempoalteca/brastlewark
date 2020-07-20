@@ -20,4 +20,20 @@ class Utils {
         }
     }
 
+    static func dataFromBundle(type: AnyClass,
+                               forResource: String,
+                               withExtension: String) -> Data {
+
+        let bundle = Bundle(for: type)
+        if let jsonString = bundle.url(
+            forResource: forResource, withExtension: withExtension) {
+            do {
+                return try Data(contentsOf: jsonString)
+            } catch {
+                return Data()
+            }
+        }
+        return Data()
+    }
+
 }

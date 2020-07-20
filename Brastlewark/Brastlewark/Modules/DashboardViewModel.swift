@@ -11,7 +11,7 @@ import Foundation
 class DashboardViewModel {
 
     // MARK: - Variables
-    private var arrayInhabitants: [Inhabitant] = []
+    var arrayInhabitants: [Inhabitant] = []
     private let networkManager = NetworkService()
 
     // MARK: - Binding to view

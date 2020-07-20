@@ -22,7 +22,6 @@
 		086E80B924C38E9A0055B6C4 /* Brastlewark.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 086E80B724C38E9A0055B6C4 /* Brastlewark.xcdatamodeld */; };
 		086E80BB24C38E9B0055B6C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 086E80BA24C38E9B0055B6C4 /* Assets.xcassets */; };
 		086E80BE24C38E9B0055B6C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 086E80BC24C38E9B0055B6C4 /* LaunchScreen.storyboard */; };
-		086E80C924C38E9B0055B6C4 /* BrastlewarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086E80C824C38E9B0055B6C4 /* BrastlewarkTests.swift */; };
 		086E80D424C38E9B0055B6C4 /* BrastlewarkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086E80D324C38E9B0055B6C4 /* BrastlewarkUITests.swift */; };
 		0875D6C924C3AD300043A4B9 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0875D6C824C3AD300043A4B9 /* WelcomeViewController.swift */; };
 		08E242F224C3B46500A431B5 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E242F124C3B46500A431B5 /* StringExtension.swift */; };
@@ -41,6 +40,11 @@
 		08E2431524C4FDDC00A431B5 /* DetailInhabitantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E2431424C4FDDC00A431B5 /* DetailInhabitantViewModel.swift */; };
 		08E2431724C5057900A431B5 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E2431624C5057900A431B5 /* UIFontExtension.swift */; };
 		08E2431B24C52E5700A431B5 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E2431A24C52E5700A431B5 /* Utils.swift */; };
+		08E2431D24C53CA500A431B5 /* DashboardViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E2431C24C53CA500A431B5 /* DashboardViewModelTests.swift */; };
+		08E2431F24C53DDD00A431B5 /* mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 08E2431E24C53DDD00A431B5 /* mock.json */; };
+		08E2432124C53F8F00A431B5 /* DashboardViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E2432024C53F8F00A431B5 /* DashboardViewModelMock.swift */; };
+		08E2432424C54F5100A431B5 /* MockAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08E2432324C54F5100A431B5 /* MockAssets.xcassets */; };
+		08E2432824C54FFC00A431B5 /* DetailInhabitantViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E2432724C54FFC00A431B5 /* DetailInhabitantViewModelTests.swift */; };
 		3CEC9D7AF9F87CC5147EF1CB /* Pods_Brastlewark_BrastlewarkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A483AE67BDC49291887416B /* Pods_Brastlewark_BrastlewarkUITests.framework */; };
 		4E80C63F19D965B9B3AC468A /* Pods_Brastlewark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45DA10C7EFE5AABB5FB773F /* Pods_Brastlewark.framework */; };
 		4F5C82271D2D80286965BD23 /* Pods_BrastlewarkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7681C53E1C33E178949674 /* Pods_BrastlewarkTests.framework */; };
@@ -82,7 +86,6 @@
 		086E80BD24C38E9B0055B6C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		086E80BF24C38E9B0055B6C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		086E80C424C38E9B0055B6C4 /* BrastlewarkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrastlewarkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		086E80C824C38E9B0055B6C4 /* BrastlewarkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrastlewarkTests.swift; sourceTree = "<group>"; };
 		086E80CA24C38E9B0055B6C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		086E80CF24C38E9B0055B6C4 /* BrastlewarkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrastlewarkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		086E80D324C38E9B0055B6C4 /* BrastlewarkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrastlewarkUITests.swift; sourceTree = "<group>"; };
@@ -105,6 +108,11 @@
 		08E2431424C4FDDC00A431B5 /* DetailInhabitantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInhabitantViewModel.swift; sourceTree = "<group>"; };
 		08E2431624C5057900A431B5 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		08E2431A24C52E5700A431B5 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		08E2431C24C53CA500A431B5 /* DashboardViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModelTests.swift; sourceTree = "<group>"; };
+		08E2431E24C53DDD00A431B5 /* mock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mock.json; sourceTree = "<group>"; };
+		08E2432024C53F8F00A431B5 /* DashboardViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModelMock.swift; sourceTree = "<group>"; };
+		08E2432324C54F5100A431B5 /* MockAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MockAssets.xcassets; sourceTree = "<group>"; };
+		08E2432724C54FFC00A431B5 /* DetailInhabitantViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInhabitantViewModelTests.swift; sourceTree = "<group>"; };
 		1552E2B8292BEA8870F2B698 /* Pods-Brastlewark-BrastlewarkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brastlewark-BrastlewarkUITests.debug.xcconfig"; path = "Target Support Files/Pods-Brastlewark-BrastlewarkUITests/Pods-Brastlewark-BrastlewarkUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1CF404997EADC1A45BCD74D1 /* Pods-Brastlewark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brastlewark.release.xcconfig"; path = "Target Support Files/Pods-Brastlewark/Pods-Brastlewark.release.xcconfig"; sourceTree = "<group>"; };
 		2D7681C53E1C33E178949674 /* Pods_BrastlewarkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrastlewarkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -207,7 +215,9 @@
 		086E80C724C38E9B0055B6C4 /* BrastlewarkTests */ = {
 			isa = PBXGroup;
 			children = (
-				086E80C824C38E9B0055B6C4 /* BrastlewarkTests.swift */,
+				08E2432224C5402300A431B5 /* Mocks */,
+				08E2431C24C53CA500A431B5 /* DashboardViewModelTests.swift */,
+				08E2432724C54FFC00A431B5 /* DetailInhabitantViewModelTests.swift */,
 				086E80CA24C38E9B0055B6C4 /* Info.plist */,
 			);
 			path = BrastlewarkTests;
@@ -348,6 +358,16 @@
 				08E2431424C4FDDC00A431B5 /* DetailInhabitantViewModel.swift */,
 			);
 			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		08E2432224C5402300A431B5 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				08E2432024C53F8F00A431B5 /* DashboardViewModelMock.swift */,
+				08E2431E24C53DDD00A431B5 /* mock.json */,
+				08E2432324C54F5100A431B5 /* MockAssets.xcassets */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		08E32CCD24C3901A003742B4 /* Extensions */ = {
@@ -516,6 +536,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08E2432424C54F5100A431B5 /* MockAssets.xcassets in Resources */,
+				08E2431F24C53DDD00A431B5 /* mock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -659,7 +681,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				086E80C924C38E9B0055B6C4 /* BrastlewarkTests.swift in Sources */,
+				08E2431D24C53CA500A431B5 /* DashboardViewModelTests.swift in Sources */,
+				08E2432124C53F8F00A431B5 /* DashboardViewModelMock.swift in Sources */,
+				08E2432824C54FFC00A431B5 /* DetailInhabitantViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
