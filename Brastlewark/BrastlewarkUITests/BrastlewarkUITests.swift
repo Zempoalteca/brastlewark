@@ -18,19 +18,34 @@ class BrastlewarkUITests: XCTestCase {
 
         // In UI tests it’s important to set the initial state - such as interface orientation -
         // required for your tests before they run. The setUp method is a good place to do this.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
+    }
 
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testOpenInhabitantDetails_whenTapOverColletionViewCell_thenShowInhabitantDetails() throws {
+        XCUIApplication()
+            .collectionViews
+            .children(matching: .cell)
+            .element(boundBy: 5)
+            .children(matching: .other)
+            .element.children(matching: .other)
+            .element
+            .tap()
+    }
+
+    func testBackToDashboardFromDetails_whenTapBackNavigationBarButton_thenShowsDashboardView() {
+        let app = XCUIApplication()
+        app.collectionViews
+            .children(matching: .cell)
+            .element(boundBy: 0)
+            .children(matching: .other)
+            .element
+            .children(matching: .other)
+            .element
+            .tap()
+        app.navigationBars["Brastlewark"]
+            .buttons["Brastlewark"]
+            .tap()
     }
 
     func testLaunchPerformance() throws {
@@ -41,4 +56,9 @@ class BrastlewarkUITests: XCTestCase {
             }
         }
     }
+
+    override func tearDownWithError() throws {
+        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    }
+
 }
