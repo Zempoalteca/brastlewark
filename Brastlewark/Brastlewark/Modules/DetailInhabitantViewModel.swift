@@ -11,30 +11,34 @@ import Foundation
 class DetaitInhabitantViewModel {
 
     // MARK: - Variables
+
     private let networkManager = NetworkService()
 
     // MARK: - Binding to view
+
     var showLoader: (() -> Void)?
     var hideLoader: (() -> Void)?
     var setImage: ((Data?) -> Void)?
 
     // MARK: - Lifecycle
+
     init() {
     }
 
     // MARK: - Functions
+
+    /// Donwload the image data for the given url as string
+    /// - Parameter path: Location URL of Image as String
     func fetchImage(path: String) {
         showLoader?()
         networkManager.donwloadInfo(
             for: path,
             completionSuccess: { data in
                 self.hideLoader?()
-                print("Success on View model")
                 self.setImage?(data)
             }, completionError: {
                 self.hideLoader?()
                 self.setImage?(nil)
-                print("Error on view model")
             })
     }
 

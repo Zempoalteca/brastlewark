@@ -82,14 +82,14 @@ extension DashboardViewController: UICollectionViewDataSource {
                 return UICollectionViewCell()
         }
         cell.configure()
-        let inhabitant = viewModel.arrayInhabitants[indexPath.row]
+        let inhabitant = viewModel.getInhabitant(for: indexPath.row)
         cell.setInfo(for: inhabitant)
         if inhabitant.image == nil {
-            viewModel.downloadThumbnail(path: inhabitant.thumbnail) { [weak self] imageData in
-                self?.viewModel.arrayInhabitants[indexPath.row].image =
-                    imageData?.resizeImageData(compressionQuality: 0.1)
-                cell.setThumbnail(data: imageData)
-            }
+            viewModel.downloadThumbnail(
+                for: indexPath.row,
+                completion: { [weak self] thumbnailData in
+                    cell.setThumbnail(data: thumbnailData)
+                })
         }
         return cell
     }
@@ -114,7 +114,7 @@ extension DashboardViewController: UICollectionViewDelegate {
                         didSelectItemAt indexPath: IndexPath) {
 
         let controller = DetailInhabitantViewController()
-        controller.inhabitant = viewModel.arrayInhabitants[indexPath.row]
+        controller.inhabitant = viewModel.getInhabitant(for: indexPath.row)
         self.navigationController?.pushViewController(controller,
                                                       animated: true)
     }
